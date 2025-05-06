@@ -15,7 +15,9 @@ RUN npm ci --omit=dev
 COPY . .
 
 # Build the application
-RUN npm run build
+RUN --mount=type=bind,source=/data/coolify/applications/rosowsoo0oscksk0ssoksg48/data/lib,target=/app/src/lib \
+    --mount=type=bind,source=/data/coolify/applications/rosowsoo0oscksk0ssoksg48/data/static/thumbnails,target=/app/static \
+    npm run build
 
 # Expose app port (assumed; adjust if needed)
 EXPOSE 3000
