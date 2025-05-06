@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-static';              // static adapter
+import adapter from '@sveltejs/adapter-node';              // static adapter
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex } from 'mdsvex';                             // mdsvex preprocessor
 import mdsvexRelativeImages from 'mdsvex-relative-images';
