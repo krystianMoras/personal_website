@@ -2,3 +2,6 @@
 build/
 node_modules/
 src/data/
+static/thumbnails/
+src/lib/recipes/
+recipesPreview.json
