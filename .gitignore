@@ -5,3 +5,4 @@ src/data/
 static/thumbnails/
 src/lib/recipes/
 recipesPreview.json
+Makefile
