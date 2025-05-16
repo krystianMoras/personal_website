@@ -4,5 +4,7 @@ node_modules/
 src/data/
 static/thumbnails/
 src/lib/recipes/
-recipesPreview.json
+src/lib/*.json
 Makefile
+.env
+src/lib/blog

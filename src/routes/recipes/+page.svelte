@@ -14,7 +14,7 @@
           {/if}
         </div>
         <div class="card-content">
-          <h2 class="card-title">{post.slug}</h2>
+          <h2 class="card-title">{post.slug.replace('.md', '')}</h2>
           <p class="card-excerpt">{post.excerpt}</p>
         </div>
       </a>
