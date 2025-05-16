@@ -57,12 +57,13 @@ async function generate() {
   const files = fs.readdirSync(recipesDir).filter(f => f.endsWith('.md'));
 
   for (const filename of files) {
-    const slug = path.basename(filename, '.md');
+    const slug = path.basename(filename);
     const fullPath = path.join(recipesDir, filename);
     const raw = fs.readFileSync(fullPath, 'utf-8');
     const { data, content } = matter(raw);
 
     // First image match
+
     const imgMatch = content.match(/!\[.*?\]\((.*?)\)/);
     let originalImage = imgMatch ? imgMatch[1] : null;
     let firstImageUrl = null;
@@ -70,7 +71,6 @@ async function generate() {
     if (originalImage) {
       // absolute FS path
       const absImg = resolveImageFsPath(originalImage, fullPath);
-
       // check if image exists
       if (!fs.existsSync(absImg)) {
         console.warn(`Image not found: ${absImg}`);

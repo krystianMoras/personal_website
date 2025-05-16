@@ -11,7 +11,7 @@
 	</main>
 
 	<footer>
-		<p>by @krystianmoras</p>
+		<p>by <a href="https://github.com/krystianMoras">@krystianMoras</a></p>
 	</footer>
 </div>
 

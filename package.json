@@ -2,7 +2,7 @@
 	"name": "sveltekit-demo-app-adapter-node",
 	"version": "0.0.1",
 	"scripts": {
-		"generate:previews": "node scripts/generatePreviews.js",
+		"generate:previews": "node scripts/prepareRecipes.js && node scripts/prepareBlog.js",
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
